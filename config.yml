@@ -1,0 +1,15 @@
+project:
+  name: modern-analytics-project-1
+warehouse:
+  type: snowflake
+  database: MAS_PROJECT1
+  schema: RAW
+sources:
+  - name: orders_csv
+    type: csv
+    target_table: RAW_ORDERS
+  - name: fx_rates_api
+    type: api
+    target_table: RAW_FX_RATES
+
+
